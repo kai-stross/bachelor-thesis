@@ -1,0 +1,3 @@
+Brave 2022,RepeatedStratifiedKFold with K=10
+RandomForestClassifier,0.19629953379953383
+XGBClassifier,0.2159896149602032

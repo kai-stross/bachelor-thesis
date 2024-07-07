@@ -1,0 +1,41 @@
+dataset:
+  dir: ./webgraphs/Chrome
+  format: PyG
+  name: chrome-run-01-without-centrality-metrics
+  split:
+  - 0.8
+  - 0.1
+  - 0.1
+  task: node
+  task_type: classification
+  transductive: true
+  transform: none
+gnn:
+  act: prelu
+  agg: mean
+  att_final_linear: true
+  batchnorm: true
+  dim_inner: 64
+  dropout: 0.1
+  layer_type: sageconv
+  layers_mp: 3
+  layers_post_mp: 1
+  layers_pre_mp: 2
+  normalize_adj: false
+  self_msg: add
+  skip_every: 2
+  stage_type: skipconcat
+model:
+  edge_decoding: dot
+  graph_pooling: add
+  loss_fun: cross_entropy
+optim:
+  base_lr: 0.01
+  max_epoch: 200
+  optimizer: adam
+out_dir: results\sage_base_grid_sage_exploration
+train:
+  batch_size: 128
+  ckpt_period: 100
+  eval_period: 20
+  sampler: full_batch

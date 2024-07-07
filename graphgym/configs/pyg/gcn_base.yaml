@@ -1,0 +1,36 @@
+out_dir: results
+dataset:
+  format: PyG
+  name: chrome-run-01-without-centrality-metrics
+  dir: ./webgraphs/Chrome
+  task: node
+  task_type: classification
+  transductive: true
+  split:  [0.8, 0.1, 0.1] # train, val, test
+  transform: none
+train:
+  batch_size: 128
+  eval_period: 20
+  ckpt_period: 100
+  sampler: full_batch
+model:
+  type: gnn
+  loss_fun: cross_entropy
+  edge_decoding: dot
+  graph_pooling: add
+gnn:
+  layers_pre_mp: 0
+  layers_mp: 2
+  layers_post_mp: 1
+  dim_inner: 32
+  layer_type: generalconv
+  stage_type: stack
+  batchnorm: true
+  act: prelu
+  dropout: 0.1
+  agg: add
+  normalize_adj: false
+optim:
+  optimizer: adam
+  base_lr: 0.01
+  max_epoch: 200

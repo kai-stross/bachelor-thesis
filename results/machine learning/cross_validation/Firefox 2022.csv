@@ -1,0 +1,3 @@
+Firefox 2022,RepeatedStratifiedKFold with K=10
+RandomForestClassifier,0.6976631374359155
+XGBClassifier,0.7018528890458074

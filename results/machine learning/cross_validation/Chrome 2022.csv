@@ -1,0 +1,3 @@
+Chrome 2022,RepeatedStratifiedKFold with K=10
+RandomForestClassifier,0.8332211440892128
+XGBClassifier,0.8208809589856927

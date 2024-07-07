@@ -1,0 +1,16 @@
+# Format for each row: name in config.py; alias; range to search
+# No spaces, except between these 3 fields
+# Line breaks are used to union different grid search spaces
+# Feel free to add '#' to add comments
+
+gnn.layers_pre_mp l_pre [1,2]
+gnn.layers_mp l_mp [2,3]
+gnn.layers_post_mp l_post [1,2]
+gnn.agg agg ['add','mean','max']
+gnn.layer_type layers ['gcnconv','sageconv','gatconv']
+
+# gnn.skip_every skip [0,1,2]
+# gnn.self_msg self ['none','add','concat']
+# gnn.att_heads att_heads [1,2,3]
+# gnn.att_final_linear final_linear [False,True]
+# gnn.att_final_linear_bn final_linear_bn [False,True]

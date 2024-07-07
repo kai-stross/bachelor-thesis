@@ -1,0 +1,11 @@
+# Format for each row: name in config.py; alias; range to search
+# No spaces, except between these 3 fields
+# Line breaks are used to union different grid search spaces
+# Feel free to add '#' to add comments
+
+gnn.stage_type stage ['stack','skipsum','skipconcat']
+gnn.skip_every skip [0,1,2]
+# gnn.agg agg ['add','mean','max']
+gnn.self_msg self ['none','add','concat']
+gnn.att_final_linear final_linear [False,True]
+

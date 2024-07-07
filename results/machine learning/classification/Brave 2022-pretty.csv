@@ -1,0 +1,3 @@
+Brave 2022,accuracy,precision,recall,f1_score
+XGBClassifier,0.920,0.519,0.704,0.517
+RandomForestClassifier,0.911,0.520,0.738,0.516

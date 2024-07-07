@@ -1,0 +1,3 @@
+Chrome 2023,accuracy,precision,recall,f1_score
+RandomForestClassifier,0.888,0.865,0.886,0.874
+XGBClassifier,0.866,0.840,0.861,0.848
