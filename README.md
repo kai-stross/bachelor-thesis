@@ -1,4 +1,4 @@
-# Bachelor Thesis
+Bachelor Thesis
 ==============================
 
 This repository contains the code of my bachelor thesis `Using Graph Neural Networks for Web Tracker Detection`. It includes transforming t.ex web crawl datasets into Pytoch Geometric Data Objects and then training Graph Neural Network models on the given node classification problem. 
